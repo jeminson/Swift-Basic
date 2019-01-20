@@ -17,8 +17,8 @@ enum Airport {
 }
 
 // Create another enum for London airport
-enum LondonAirportName: String {
-    case stansted = "This is Stansted airport"
+enum LondonAirportName {
+    case stansted
     case heathrow
     case getwick
 }
@@ -35,8 +35,10 @@ class ViewController: UIViewController {
 
     func airportInfo() {
         print(airport)          // prints "sanFrancisco"
+        
         airport = .munich
         print(airport)          // prints "munich"
+        
         airport = .london(airportName: .stansted)
         print(airport)          // prints "london(airportName:
                                 //             AssociatedValueEnumDemo.LondonAirportName.stansted)"
