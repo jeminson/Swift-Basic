@@ -43,7 +43,7 @@ enum WeekDay: String {
     }
 }
 
-// enum with associated values
+// enum with associated values without labels 
 enum Student {
     case Name(String)
     case Makr(Int, Int, Int)
