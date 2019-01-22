@@ -1,5 +1,10 @@
 import UIKit
 
+/* Generic code enables you to write flexibe, reusable functions and types that can work with any type
+ 
+ Swift's Array and Dictionary types are both generic collections
+ */
+
 /* Non-Generic function */
 // 1. swaps two Int values
 // swapTwoInts(_:_:) function swaps original value of b into a, and original value of a into b
@@ -127,7 +132,7 @@ extension Stack {                   // Read-only computed property which returns
         return items.isEmpty ? nil : items[items.count - 1]
     }
 }
-// topItem computed property 
+// topItem computed property
 if let topItem = stackOfStrings.topItem {
     print("the top item on the stack is \(topItem)")            // prints "the top item on the stack is Tres"
 }
